@@ -1,0 +1,74 @@
+/*widget侧边工具*/
+.widget-wrap{position: fixed;bottom:50%;left: 20%;cursor: pointer;width:64px;z-index:890;border-radius: 10px;background:#fff;border:1px solid #ccc;}
+.widget-title{display: none;}
+.widget-icon{background: #fff url(images/widget.png) no-repeat; display:inline-block;}
+.widget-online{background-position: 0 0;width: 32px;height: 30px;}
+.widget-questionnaire{background-position: 0 -60px;width: 32px;height: 32px;}
+.widget-weixin{background-position: 0 -120px;width: 32px;height: 34px; }
+.widget-wrap .widget-box{width:100%;text-align:center;}
+.widget-wrap .widget-box:first-child{border-top-right-radius: 10px;border-top-left-radius: 10px;}
+.widget-wrap .widget-box:last-child {border-bottom-left-radius: 10px;border-bottom-right-radius: 10px;}
+.widget-wrap .widget-box a{display:table-cell;width:64px;height: 60px; text-decoration:none; font-weight:bold;vertical-align:middle;color:#fff;font-size:16px;text-decoration:none;}
+.widget-wrap .widget-active{background:#16bfb1;text-decoration:none; }
+.divide{border-bottom:1px solid #ccc; margin:0 10px;}
+.sweep_img img{border:0;}
+.widget-wrap .asid_sha_layer{background:#fff;position:absolute;right:74px;bottom:-44px; border:1px solid #ccc;}
+/* 三角符号边 */
+.widget-wrap .asid_sha_layer .arrow,.widget-wrap .asid_sha_layer .arrow em{
+  position:absolute;
+  display:block;
+  width:0;
+  height:0;
+  /*把div的font-size和line-height都设为0的时候，div的四边在IE6下都能形成完美的三角形*/
+  font-size:0;
+  line-height:0;
+}
+.widget-wrap .asid_sha_layer .arrow{
+  top:50%;
+  right:-20px;  /* 左边框10+右边框10 */
+  margin-top:-10px;  /* 三角形居中显示 top50%,另外还需要向上平移一个边框的距离 */
+  /* 上 右 下 左 */
+  border-color:transparent transparent transparent #ccc;
+  /*IE6下transparent无效！其他三边被设置成浏览器默认的颜色 把border-style设置为dashed后，IE6下其他三边就能透明了*/
+  border-style:dashed dashed dashed solid;
+  border-width:10px;
+}
+.widget-wrap .asid_sha_layer .arrow em{
+  top:-9px;  /*内层三角的border-width；*/
+  left:-10px; /*外层三角的border-width；*/
+  border-color:transparent transparent transparent #fff;
+  border-style: dashed dashed dashed solid;
+  border-width:9px;
+
+}
+
+/*变形2*/
+.widget-wrap .asid_sha_layer .arrow2{
+  position:absolute;
+  top:50%;
+  margin-top:-60px;  /* 三角形居中显示 top50%,另外还需要向上平移一个边框的距离 */
+  right:-140px;  /* 左边框10+右边框10 */
+  display:block;
+  width:0;
+  height:0;
+  /*把div的font-size和line-height都设为0的时候，div的四边在IE6下都能形成完美的三角形*/
+  font-size:0;
+  line-height:0;
+  border-color: transparent transparent #09f #09f;
+  border-style: dashed dashed solid solid;
+  border-width:60px 70px;
+}
+.widget-wrap .asid_sha_layer .arrow2 em{
+  position:absolute;
+  bottom:-60px;/*外层三角上下border-width；*/
+  left: -70px;/*外层三角左右border-width；*/
+  display:block;
+  width:0;
+  height:0;
+  /*把div的font-size和line-height都设为0的时候，div的四边在IE6下都能形成完美的三角形*/
+  font-size:0;
+  line-height:0;
+  border-color: transparent transparent #fff #fff;
+  border-style: dashed dashed solid solid;
+  border-width:40px 70px;
+}

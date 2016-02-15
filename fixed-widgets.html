@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Document</title>
+  <link rel="stylesheet" href="css/fixed-widgets.css" charset="utf-8">
+</head>
+<body>
+  <!-- asid start -->
+  <div class="widget-wrap" id="widgetWrap">
+    <div class="widget-box">
+      <a href="#" class="online-kefu" id="BizQQWPA2">
+        <i class="widget-icon widget-online"></i>
+        <span class="widget-title" >在线<br/>客服</span>
+      </a>
+      <div class="divide"></div>
+    </div>
+    <div class="widget-box">
+      <a href="http://form.mikecrm.com/f.php?t=IZOxwj" class="online-questionnaire">
+        <i class="widget-icon widget-questionnaire"></i>
+        <span class="widget-title" >有奖问卷调查</span>
+      </a>
+      <div class="divide"></div>
+    </div>
+    <div class="widget-box">
+      <a href="#" class="weixin">
+        <i class="widget-icon widget-weixin"></i>
+        <span class="widget-title" >麦獭<br/>公众号</span>
+      </a>
+      <div class="asid_sha_layer">
+        <span class="arrow"><em></em></span>
+        <div class="sweep_img">
+          <img src="images/weixin.png">
+        </div>
+      </div>
+    </div>
+    <!-- <div class="widget-box">
+		<a href="#">
+      <i class="widget-icon widget-online"></i>
+      <span class="widget-title" >返回顶部</span>
+    </a>
+	</div> -->
+  </div>
+  <!-- asid end -->
+  <script src="js/jquery.js" charset="utf-8"></script>
+  <script src="plugins/fixed-widgets.js" charset="utf-8"></script>
+  <script type="text/javascript">
+    $(function(){
+        //图片滚动特效
+        $('#widgetWrap').Widget({
+            itemsSelector     : '.widget-box',  //里边的小层
+            iconSelector       : '.widget-icon',
+            activeClass   : 'widget-active',
+            activeSelector : '.widget-title',
+            showBox    : '.asid_sha_layer' //鼠标划过显示图层
+        });
+    });
+</script>
+</body>
+</html>
